@@ -1,0 +1,25 @@
+#!/bin/bash
+
+PREFIX=/usr/local
+BUILDTYPE=Release
+
+
+for i in "$@"
+do
+	case $i in
+		-p=*|--prefix=*)
+		PREFIX="${i#*=}"
+
+	;;
+	esac
+	case $i in
+		-b=*|--buildtype=*)
+		BUILDTYPE="${i#*=}"
+
+	;;
+esac
+done
+gyp -D prefix="$PREFIX" -D configuration="$BUILDTYPE" --depth=. --generator-output=./build -f make
+
+echo -e "prefix=$PREFIX\n" > ./config.mk
+
