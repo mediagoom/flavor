@@ -1,8 +1,8 @@
 {
-  'includes': ['vc.gypi'],
+  'includes': ['vc.gypi']
     
-
-  'targets': [
+  
+  , 'targets': [
     {
         'target_name': 'flavor'
       , 'type': 'executable'
@@ -53,30 +53,29 @@
         , 'include/flavor.h'
         , 'include/flavori.h'
         , 'include/port.h'
-        
-, 'carray.c'
-, 'cbac.c'
-, 'cclass.c'
-, 'cexpr.c'
-, 'cgetput.c'
-, 'check.c'
-, 'cid.c'
-, 'cmap.c'
-, 'compile.c'
-, 'cout.c'
-, 'cpragma.c'
-, 'ctrace.c'
-, 'cvar.c'
-, 'cverbatim.c'
-, 'cxml.c'
-, 'error.c'
-, 'eval.c'
-, 'lex.yy.c'
-, 'main.c'
-, 'ptree.c'
-, 'symbol.c'
-, 'util.c'
-, 'y.tab.c'
+        , 'carray.c'
+        , 'cbac.c'
+        , 'cclass.c'
+        , 'cexpr.c'
+        , 'cgetput.c'
+        , 'check.c'
+        , 'cid.c'
+        , 'cmap.c'
+        , 'compile.c'
+        , 'cout.c'
+        , 'cpragma.c'
+        , 'ctrace.c'
+        , 'cvar.c'
+        , 'cverbatim.c'
+        , 'cxml.c'
+        , 'error.c'
+        , 'eval.c'
+        , 'lex.yy.c'
+        , 'main.c'
+        , 'ptree.c'
+        , 'symbol.c'
+        , 'util.c'
+        , 'y.tab.c'
         
       ]              
     }

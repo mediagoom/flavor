@@ -23,8 +23,8 @@
             'msvs_configuration_platform': 'x64',
           }],
          
-        ],
-        'msvs_settings': {
+        ]
+        , 'msvs_settings': {
           'VCCLCompilerTool': {
             'RuntimeLibrary': 1, # static debug
             'Optimization': 0, # /Od, no optimization
@@ -46,8 +46,8 @@
             'msvs_configuration_platform': 'x64',
           }],
           
-        ],
-        'msvs_settings': {
+        ]
+        , 'msvs_settings': {
           'VCCLCompilerTool': {
             'RuntimeLibrary': 0, # static release
             'Optimization': 3, # /Ox, full optimization
@@ -80,9 +80,9 @@
     # simply not feasible to squelch all warnings, never mind that the
     # libraries in deps/ are not under our control.
     'cflags!': ['-Werror']
-	, 'msvs_configuration_attributes': {
-		  'OutputDirectory': '$(PlatformName)\\$(ConfigurationName)',
-	}
+    , 'msvs_configuration_attributes': {
+            'OutputDirectory': '<(CONFIGURATION_NAME)',
+        }
     , 'msvs_settings': {
       'VCCLCompilerTool': {
         'StringPooling': 'true', # pool string literals
