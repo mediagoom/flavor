@@ -1,5 +1,5 @@
 {
-  'includes': ['vc.gypi']
+  'includes': ['config.gypi']
     
   
   , 'targets': [
