@@ -40,7 +40,7 @@
       'Release': {
         'variables': {
         },
-          'cflags': [ '-O3', '-ffunction-sections', '-fdata-sections' ]
+          'cflags': [ '-O3', '-ffunction-sections', '-fdata-sections', '-w' ]
 	, 'cflags!': ['-Werror', '-fno-exceptions'
 			, '-Wall', '-ansi', '-pthread'
 			, '-fstrict-aliasing'
