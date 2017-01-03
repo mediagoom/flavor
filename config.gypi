@@ -40,8 +40,15 @@
       'Release': {
         'variables': {
         },
-        'cflags': [ '-O3', '-ffunction-sections', '-fdata-sections' ],
-        'conditions': [
+          'cflags': [ '-O3', '-ffunction-sections', '-fdata-sections' ]
+	, 'cflags!': ['-Werror', '-fno-exceptions'
+			, '-Wall', '-ansi', '-pthread'
+			, '-fstrict-aliasing'
+			, '-fomit-frame-pointer'
+	]
+
+
+        , 'conditions': [
           ['target_arch=="x64"', {
             'msvs_configuration_platform': 'x64',
           }],
