@@ -119,7 +119,7 @@ static void c_var_decl_class_poly(symbol_t *sp, node_t *param, int dims, node_t 
     
     /* call error function */
     if (cpp()) {
-        c_outi("%s(_T(\"Unknown ID value for class '%s'", err_func, sp->name);
+        c_outi("%s1(_T(\"Unknown ID value for class '%s'", err_func, sp->name);
         for (i=0; i<dims; i++) 
             c_out("[%%d]");
 
