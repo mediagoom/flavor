@@ -8,33 +8,41 @@
 *.sln.docstates
 
 *.tmp
+*.tmp.mp4
 
 *.o
 /ar-lib
 config.guess
 config.sub
-config.mk
 ltmain.sh
 /m4/**/*
 *.Makefile
 *.target.mk
+Makefile
 Makefile.in
 aclocal.m4
 /autom4te.cache/**/*
 compile
+configure
 depcomp
 install-sh
 missing
 COPYING
 INSTALL
-								
+/tmp*
+
+
 #generated files
-*.sln
 *.vcxproj
 *.vcxproj.filters
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 *.vc.db
+
+# gyp generated
+*.sln
+*.vcproj
+*.rules
 
 # Build results
 [Dd]ebug/
@@ -46,7 +54,6 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
-build/
 
 # Visual Studio 2015 cache/options directory
 .vs/
@@ -271,7 +278,7 @@ update.sql
 [0-9][0-9]_*.SQL
 UPDATE_[0-9][0-9]_*.SQL
 
-/deps/*
+#/deps/*
 
 tags
 
