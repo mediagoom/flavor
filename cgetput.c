@@ -1467,7 +1467,7 @@ void class_decl(symbol_t *sp, list_t *stmts)
             else {
                 /* declare lengthof variable, if needed */
                 if (sp->id->lengthof) {
-                    c_outi("int ");
+                    c_outi("uint64_t ");
                     c_out(sp->id->plengthof->name, prefix);
                     c_out(";\n");
                 }
@@ -1481,7 +1481,7 @@ void class_decl(symbol_t *sp, list_t *stmts)
 
         /* declare lengthof variable, if needed */
         if (sp->lengthof) 
-            c_outi("int %slengthof;\n", prefix);
+            c_outi("uint64_t %slengthof;\n", prefix);
 
         /* process class variable declarations */
         c_stmts(stmts);
