@@ -20,7 +20,7 @@
       , 'dependencies': [
       		]
       , 'defines': [
-        
+        'YY_NO_UNISTD_H'
       ]
       , 'include_dirs': [
         './include'

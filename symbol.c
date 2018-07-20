@@ -100,6 +100,7 @@ static reserved_t Reserved_Exported[]={
     "bit",          BIT,
     "char",         CHAR,
     "int",          INT,
+    "uint64_t",     UINT64_T,
     "float",        FLOAT,
     "double",       DOUBLE,
     /* end */

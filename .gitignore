@@ -30,7 +30,8 @@ missing
 COPYING
 INSTALL
 /tmp*
-
+/test/*.cpp
+/test/*.h
 
 #generated files
 *.vcxproj

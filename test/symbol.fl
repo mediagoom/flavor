@@ -1,0 +1,15 @@
+
+
+class pic_parameter_set_rbsp   
+{
+	unsigned int(1) pic_parameter_set_id = 0;
+	 int(7) seq_parameter_set_id = 0;
+
+     uint64_t start_size = numbits();
+
+     unsigned int(1) entropy_coding_mode_flag;
+
+     %g{
+        int pippo;
+     %g}
+}
